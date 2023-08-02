@@ -24,7 +24,7 @@ const mailOptions={
   from:process.env.user,
   to:email,
   subject:"To activate the account",
-  html:'<p>Welcome to SoCi App '+userFname+ " "+userLname+'<br/> We thank you for joining our team, but the your account is still inactive. You can activate your account, by <a href="https://animated-stardust-606ff0.netlify.app/activate?token='+randomstring+'">clicking here</a></p>',
+  html:'<p>Welcome to SoCi App '+userFname+ " "+userLname+'<br/> We thank you for joining our team, but the your account is still inactive. You can activate your account, by <a href="https://master--social-media-manager-09.netlify.app/activate?token='+randomstring+'">clicking here</a></p>',
 }
 
 transpoter.sendMail(mailOptions,function(error,info){
@@ -63,7 +63,7 @@ const mailOptions={
   to:email,
   subject:"To activate the account",
   // to do------------------------------------------------> change href 
-  html:'<p>Welcome '+userFname+ " " +userLname+'<br/> This mail is for reset password your account. Do <a href="https://animated-stardust-606ff0.netlify.app/resetpassword">click here</a> your secret code is:'+randomstring+'</p>',
+  html:'<p>Welcome '+userFname+ " " +userLname+'<br/> This mail is for reset password your account. Do <a href="https://master--social-media-manager-09.netlify.app/resetpassword">click here</a> your secret code is:'+randomstring+'</p>',
 }
 
 transpoter.sendMail(mailOptions,function(error,info){
